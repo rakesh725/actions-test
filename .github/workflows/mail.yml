@@ -18,9 +18,9 @@ jobs:
           path: ./
       - name: list file and dir in workspace 
         working-directory: ${{ github.workspace }}  
-        run: ls -la               
+        run: ls -la  
       - name: Hello action step
-        uses: ../hello-world-docker-action
+        uses: ./hello-world-docker-action
         id: hello
         with:
           who-to-greet: "Manish Pandey"
