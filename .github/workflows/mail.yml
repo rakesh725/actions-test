@@ -13,8 +13,10 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
-        uses: ./rakesh725/hello-world-docker-action
+        with:
+          respository: './rakesh725/hello-world-docker-action'
+      - name: Hello action step
+        uses: ./hello-world-docker-action
         id: hello
         with:
           who-to-greet: "Manish Pandey"
