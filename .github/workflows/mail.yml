@@ -15,8 +15,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           respository: 'rakesh725/hello-world-docker-action'
-          token: ${{ secrets.GIT_PAT }}
-        
+                
       - name: Hello action step
         uses: ./hello-world-docker-action
         id: hello
