@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          respository: 'rakesh725/hello-world-docker-action'
+          repository: 'rakesh725/hello-world-docker-action'
                 
       - name: Hello action step
         uses: ./hello-world-docker-action
